@@ -1,5 +1,5 @@
-#include <iostream>
 #include "controllers/masterController.hpp"
+#include <iostream>
 #include <ncurses.h>
 
 /*
@@ -11,7 +11,7 @@
 
 */
 int main() {
-  MasterController* mc = new MasterController();
-  mc->runGameCycle();
-  delete mc;
+    MasterController *mc = new MasterController();
+    mc->runGameCycle();
+    delete mc;
 }

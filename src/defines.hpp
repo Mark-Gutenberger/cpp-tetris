@@ -1,23 +1,23 @@
 #pragma once
 
 // Ширина игрового поля (кубиков)
-#define   GAME_FIELD_WIDHT 10
+#define GAME_FIELD_WIDHT 10
 
 // Высота игрового поля (кубиков)
-#define  GAME_FIELD_HEIGHT 20
+#define GAME_FIELD_HEIGHT 20
 
 // Длина одного тика (в тысячных миллисекунды)
-#define           TICK_LEN 1000
+#define TICK_LEN 1000
 
 // Награда за зачистку одной строки кубиков
-#define         ROW_REWARD 10
+#define ROW_REWARD 10
 
 // Раз во сколько очков повышается сложность
 // (должно быть кратно ROW_REWARD)
-#define         LEVEL_COST 50
+#define LEVEL_COST 50
 
 // Ускорение падения фигурок каждый уровень
-#define  SPEEDUP_PER_LEVEL 1.5
+#define SPEEDUP_PER_LEVEL 1.5
 
 // Раз в какое количество тиков на 0 уровне должен
 // падать кубик вниз.

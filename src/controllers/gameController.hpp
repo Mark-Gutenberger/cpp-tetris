@@ -13,11 +13,7 @@ GAME_ENDED - игра окончилась, необходимо прерват�
   игровой цикл и вывести на экран итоговый счет
 
 */
-enum GameStatus {
-  IN_GAME,
-  GAME_ENDED
-};
-
+enum GameStatus { IN_GAME, GAME_ENDED };
 
 /*
 
@@ -37,39 +33,40 @@ moveLeft, moveRight, moveDown и rotate
 */
 
 class GameController {
-private:
-  MasterController* masterController;
+  private:
+    MasterController *masterController;
 
-  int score;
-  int** gameField;
-  Figure* currentFigure;
+    int score;
+    int **gameField;
+    Figure *currentFigure;
 
-  int physics_delay = DEFAULT_FALL_DELAY;
+    int physics_delay = DEFAULT_FALL_DELAY;
 
-  void freezeFigure();
-  void generateNewFigure();
-  void removeFullRows();
-  void addScore();
+    void freezeFigure();
+    void generateNewFigure();
+    void removeFullRows();
+    void addScore();
 
-  void removeRow(int rowNumber);
-  GameStatus status = IN_GAME;
-public:
-  GameController(MasterController* mc);
-  ~GameController();
+    void removeRow(int rowNumber);
+    GameStatus status = IN_GAME;
 
-  int getScore();
-  const int** getGameField();
-  Figure* getCurrentFigure();
+  public:
+    GameController(MasterController *mc);
+    ~GameController();
 
-  void tick();
+    int getScore();
+    const int **getGameField();
+    Figure *getCurrentFigure();
 
-  void moveRight();
-  void moveLeft();
-  void moveDown();
-  void rotate();
+    void tick();
 
-  void setGameStatus(GameStatus gs);
-  GameStatus getGameStatus();
+    void moveRight();
+    void moveLeft();
+    void moveDown();
+    void rotate();
 
-  int getPhysicsDelay();
+    void setGameStatus(GameStatus gs);
+    GameStatus getGameStatus();
+
+    int getPhysicsDelay();
 };
