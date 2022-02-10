@@ -1,1 +1,2 @@
-run = "make && ./main"
+run="make && ./main"
+format="clang-format -w ."
