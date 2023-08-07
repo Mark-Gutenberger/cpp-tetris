@@ -3,10 +3,10 @@
 class MasterController;
 
 class InputController {
-   private:
-	MasterController* masterController;
+ private:
+  MasterController* masterController;
 
-   public:
-	InputController(MasterController* mc);
-	void tick();
+ public:
+  InputController(MasterController* mc);
+  void tick();
 };

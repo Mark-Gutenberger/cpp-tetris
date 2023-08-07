@@ -4,17 +4,17 @@ class GraphicsController;
 class InputController;
 
 class MasterController {
-   private:
-	GameController* gameController;
-	GraphicsController* graphicsController;
-	InputController* inputController;
+ private:
+  GameController* gameController;
+  GraphicsController* graphicsController;
+  InputController* inputController;
 
-   public:
-	MasterController();
-	~MasterController();
-	void runGameCycle();
+ public:
+  MasterController();
+  ~MasterController();
+  void runGameCycle();
 
-	GameController* getGameController();
-	GraphicsController* getGraphicsController();
-	InputController* getInputController();
+  GameController* getGameController();
+  GraphicsController* getGraphicsController();
+  InputController* getInputController();
 };
