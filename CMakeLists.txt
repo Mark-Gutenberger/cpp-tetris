@@ -5,7 +5,7 @@ project("netris"
 	LANGUAGES CXX
 )
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include(cmake/SourcesAndHeaders.cmake)
@@ -77,7 +77,7 @@ message(STATUS "Added all header and implementation files.\n")
 # Set the project standard and warnings
 #
 
-target_compile_features(${PROJECT_NAME} INTERFACE cxx_std_17)
+target_compile_features(${PROJECT_NAME} INTERFACE cxx_std_20)
 
 include(cmake/CompilerWarnings.cmake)
 set_project_warnings(${PROJECT_NAME})
